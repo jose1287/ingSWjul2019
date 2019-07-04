@@ -12,8 +12,13 @@ public class Proyecto {
         System.out.println("Ingrese año actual");
         act=x.nextInt();
         int edad=act-a;
- System.out.println("La persona tiene "+edad+ " años");        
-        
+        if (edad>0 && edad<18)
+       System.out.println("La persona tiene "+edad+ " años es menor de edad");
+       else  if (edad>18 && edad<100)
+       System.out.println("La persona tiene "+edad+ " años es mayor de edad");
+       else if (edad>100)
+       System.out.println("edad incorrecta por favor ingrese nuevamente el año de nacimiento");
+
     }
-    
+
 }
